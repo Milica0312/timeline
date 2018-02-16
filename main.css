@@ -1,0 +1,176 @@
+/*FLEX BOX*/
+
+.flexbox {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  overflow: hidden;
+}
+
+.flexbox .col:nth-child(1) {
+  background: #ccc;
+  -webkit-order: 1;
+      -ms-flex-order: 1;
+          order: 0;
+}
+.flexbox .col:nth-child(2) {
+  background: #eee;
+  -webkit-order: 0;
+      -ms-flex-order: 0;
+          order: 1;
+}
+.flexbox .col:nth-child(3) {
+  background: #eee;
+  -webkit-order: 2;
+      -ms-flex-order: 2;
+          order: 2;
+}
+/**/
+
+/*TIMELINE*/
+.timelineholder{
+	width:80%;
+	margin-left:auto;
+	margin-right:auto;
+	background-color:#fff;
+	overflow:hidden;
+}
+.timelineinfobox{
+  position: relative;
+	width:15% !important;
+	float:left;
+  background-color: white !important;
+}
+.timelinesmall{
+	width:5% !important;
+	float:left;
+}
+.timelinebig{
+	width:80% !important;
+	float:left;
+  background-color: white !important;
+  position:relative;
+}
+
+.datelocation{
+	width:100%;
+}
+
+.moreinfo{
+	float:right;
+}
+
+.line_time{
+  background-color: white !important;
+  position: relative;
+}
+
+.datum p {
+  text-align: center;
+  font-size: 45px;
+  line-height: 48px;
+  padding-top: 20px;
+  color: #FC563D;
+}
+
+.lokacija p{
+  text-align: center;
+  font-size: 20px;
+  line-height: 25px;
+  color: #FC563D;
+}
+
+/*krug u timelineu*/
+.krug{
+	border-radius: 50%;
+	width: 20px;
+	height: 20px;
+  left: 50%;
+  margin-left: -10px;
+  top: 50%;
+  margin-top: -10px;
+  background-color: #ED5B56;
+  position: absolute;
+}
+
+.vertikala {
+	width: 4px;
+	height: 500px;
+  left: 50%;
+  margin-left: -2px;
+  background-color: #4B5C70;
+  position: absolute;
+}
+
+.ac_open_pos{
+  position: absolute;
+  top: 20px;
+  right: 15px;
+}
+
+.timelinebig h1{
+  width: 80%;
+  font-size: 20px;
+}
+
+.timelinebig p{
+  width: 90%;
+  font-size: 16px;
+}
+
+.moreinfo img{
+  width: 20px;
+}
+
+.okreni{
+  transform: rotate(-180deg);
+}
+
+.strelica_acc{
+  -moz-transition: transform 0.5s;
+  -webkit-transition: transform 0.5s;
+  transition: transform 0.5s;
+}
+
+.strelica_acc_subs{
+  display: none;
+}
+
+.zatvori_acc_subs{
+  position: absolute;
+  width: 10px;
+  top: 5px;
+  right: 5px;
+}
+
+/*END TIMELINE*/
+@media only screen and (max-width: 1080px){
+	/*TIMELINE*/
+.timelineholder {
+    width: 95%;
+    margin-left: 5%;
+    margin-right: 5%;
+    background-color: #fff;
+    overflow: hidden;
+}
+.datum p {
+    text-align: center;
+    font-size: 18px;
+    line-height: 20px;
+    padding-top: 20px;
+    color: #FC563D;
+}
+.lokacija p {
+    text-align: center;
+    font-size: 11px;
+    line-height: 16px;
+    color: #FC563D;
+}
+.timelinebig {
+    padding: 0 15px;
+}
+.timelinebig p {
+    font-size: 13px;
+}
+/*END TIMELINE*/
+}

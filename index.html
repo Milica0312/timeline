@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title></title>
+
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="">
+<meta name="author" content="">
+
+<!-- Open Graph -->
+<meta property="og:title" content="" />
+<meta property="og:type" content="website" />
+<meta property="og:url" content="" />
+<meta property="og:image" content="" />
+<link rel="canonical" href="" />
+<!-- Custom Fonts -->
+
+<!--bootstrap-->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<!--css-->
+<link rel="stylesheet" href="main.css">
+<!--js-->
+
+<!--favicon-->
+<link rel="shortcut icon" href="" />
+<!--analitika-->
+
+
+</head>
+<body>
+	<div class="timelineholder flexbox">
+		<div class="timelineinfobox col">
+			<div class="datelocation datum">
+				<p>26. FEB</p>
+			</div>
+			<div class="datelocation lokacija">
+				<p>location1</p>
+			</div>
+		</div>
+		<div class="timelinesmall col line_time">
+			<div class="vertikala"></div>
+			<div class="krug"></div>
+		</div>
+		<div class="timelinebig col" id="accordion-menu">
+			<h1><strong>JELLY DANISH MARZIPAN CHOCOLATE </strong></h1>
+			<p>Cupcake ipsum dolor sit amet jelly gingerbread. Bear claw sesame snaps candy canes liquorice soufflé I love. Macaroon croissant tart. Gummies pie pie.</p>
+			<div class="open ac_open_pos">
+				<a class="moreinfo open" href="#" ><img class="strelica_acc" src="strelica.png" alt="expand"></a>
+			</div>
+			<p class="content">Chocolate bar soufflé chocolate cake I love liquorice jelly chocolate bar. Powder cake gummi bears cake candy canes candy. I love lemon drops macaroon. I love chocolate liquorice dessert sesame snaps bear claw chocolate cake. Icing jelly-o jelly-o. Tiramisu ice cream icing. Jujubes gummi bears jelly beans sugar plum biscuit bonbon. Sweet cookie jujubes cookie. Lollipop jelly-o liquorice liquorice jelly beans.</p>
+		</div>
+	</div>
+	<div class="timelineholder flexbox">
+		<div class="timelineinfobox col">
+			<div class="datelocation datum">
+				<p>26. FEB</p>
+			</div>
+			<div class="datelocation lokacija">
+				<p>location1</p>
+			</div>
+		</div>
+		<div class="timelinesmall col line_time">
+			<div class="vertikala"></div>
+			<div class="krug"></div>
+		</div>
+		<div class="timelinebig col" id="accordion-menu">
+			<h1><strong>JELLY DANISH MARZIPAN CHOCOLATE </strong></h1>
+			<p>Cupcake ipsum dolor sit amet jelly gingerbread. Bear claw sesame snaps candy canes liquorice soufflé I love. Macaroon croissant tart. Gummies pie pie.</p>
+			<div class="open ac_open_pos">
+				<a class="moreinfo open" href="#" ><img class="strelica_acc" src="strelica.png" alt="expand"></a>
+			</div>
+			<p class="content">Chocolate bar soufflé chocolate cake I love liquorice jelly chocolate bar. Powder cake gummi bears cake candy canes candy. I love lemon drops macaroon. I love chocolate liquorice dessert sesame snaps bear claw chocolate cake. Icing jelly-o jelly-o. Tiramisu ice cream icing. Jujubes gummi bears jelly beans sugar plum biscuit bonbon. Sweet cookie jujubes cookie. Lollipop jelly-o liquorice liquorice jelly beans.</p>
+		</div>
+	</div>
+	<div class="timelineholder flexbox">
+		<div class="timelineinfobox col">
+			<div class="datelocation datum">
+				<p>26. FEB</p>
+			</div>
+			<div class="datelocation lokacija">
+				<p>location1</p>
+			</div>
+		</div>
+		<div class="timelinesmall col line_time">
+			<div class="vertikala"></div>
+			<div class="krug"></div>
+		</div>
+		<div class="timelinebig col" id="accordion-menu">
+			<h1><strong>JELLY DANISH MARZIPAN CHOCOLATE </strong></h1>
+			<p>Cupcake ipsum dolor sit amet jelly gingerbread. Bear claw sesame snaps candy canes liquorice soufflé I love. Macaroon croissant tart. Gummies pie pie.</p>
+			<div class="open ac_open_pos">
+				<a class="moreinfo open" href="#" ><img class="strelica_acc" src="strelica.png" alt="expand"></a>
+			</div>
+			<p class="content">Chocolate bar soufflé chocolate cake I love liquorice jelly chocolate bar. Powder cake gummi bears cake candy canes candy. I love lemon drops macaroon. I love chocolate liquorice dessert sesame snaps bear claw chocolate cake. Icing jelly-o jelly-o. Tiramisu ice cream icing. Jujubes gummi bears jelly beans sugar plum biscuit bonbon. Sweet cookie jujubes cookie. Lollipop jelly-o liquorice liquorice jelly beans.</p>
+		</div>
+	</div>
+
+	<script>
+	$('#accordion-menu .open').click(function() {
+
+		$('#accordion-menu .open').removeClass('open-selected');
+		$('#accordion-menu .content').slideUp('normal');
+		if($(this).next().is(':hidden') == true) {
+			$(this).addClass('open-selected');
+			$(this).next().slideDown('normal');
+		}
+
+		});
+		$('#accordion-menu .content').hide();
+
+		$(".moreinfo").click( function() {
+				$(".strelica_acc").toggleClass('okreni');
+		 });
+	</script>
+</body>
+</html>
